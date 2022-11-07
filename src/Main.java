@@ -6,7 +6,7 @@ public class Main {
 
 
     public static void main(String[] args) {
-        //1часть
+        //1часть - добавим книги
         List<String> books = new ArrayList<>();
         books.add("Сказки");
         books.add("Баллады");
@@ -18,7 +18,7 @@ public class Main {
         ret.forEach(System.out::println);
 
 
-        //2 часть
+        //2 часть - подставляем числа и ловим исключение через метод
         try {
             testException(5);
             testException(-112);
@@ -59,7 +59,7 @@ public class Main {
         return shelves;
     }
 
-    //задание метод проверки числа на минус, выбрасываем свое предупреждение
+    //задание - метод проверки числа на минус, выбрасываем свое предупреждение
     static void testException(int x) throws MyException {
         if (x < 0) {
             throw new MyException(x);
